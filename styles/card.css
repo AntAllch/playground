@@ -3,9 +3,12 @@
     --gold-darker: #D68A02;
     --yellow: #E1BF24;
     --red: #d60000;
+    --black: #111111;
 
-    --fs-tiny: 10px;
     --fs-title: 25px;
+    --fs-medium: 18px;
+    --fs-small: 13px;
+    --fs-tiny: 10px;
 }
 
 .card {
@@ -19,6 +22,7 @@
 
         .icon {
             width: 20px;
+            height: 20px;
         }
 
         .card-type {
@@ -58,6 +62,71 @@
                 object-fit: contain;
                 width: 100%;
                 height: 100%;
+            }
+        }
+
+        .pokemon-attributes {
+            position: relative;
+            text-align: center;
+
+            img {
+                position: absolute;
+                left: -10px;
+                top: 4px;
+                width: 30px;
+            }
+
+            p {
+                background: linear-gradient(to right, #996918, #E0BF42, #996918);
+                font-size: var(--fs-small);
+                font-weight: 500;
+                display: inline-block;
+                padding: .2rem 1rem;
+                margin-top: 4px;
+            }
+        }
+
+        .pokemon-moves {
+            /* background: coral; */
+
+            .move {
+                display: flex;
+                align-items: center;
+                padding-block: .7rem;
+                border-bottom: solid 2px var(--black);
+
+                .name {
+                    font-size: var(--fs-small);
+
+                    strong {
+                        font-size: var(--fs-medium);
+                    }
+                }
+
+                .score {
+                    font-size: var(--fs-title);
+                }
+
+                .icons {
+                    display: flex;
+                    gap: .25rem;
+                    margin-right: .4rem;
+                }
+            }
+
+            .move:first-child {
+                justify-content: space-between;
+                padding: 1.2rem .8rem;
+            }
+
+            .move:nth-child(2) {
+                padding-right: .7rem;
+                align-items: start;
+                
+                .name {
+                    padding-right: .2rem;
+                    margin-right: auto;
+                }
             }
         }
     }
