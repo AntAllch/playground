@@ -17,74 +17,86 @@
         <div class="coded">
             <div class="card">
                 <div class="inner">
-                    <div class="container">
-                        <p class="card-type"><strong>Basic Pokemon</strong></p>
-                        
-                        <div class="pokemon-intro">
-                            <h1 class="name">Pikachu</h1>
+                    <div class="front">
+                        <div class="container">
+                            <p class="card-type"><strong>Basic Pokemon</strong></p>
+                            
+                            <div class="pokemon-intro">
+                                <h1 class="name">Pikachu</h1>
 
-                            <div class="power">
-                                <span>40 HP</span>
-                                <img src="./images/lightning.png" alt="Lightning power" class="icon">
-                            </div>
-                        </div>
-                        
-                        <div class="image">
-                            <img src="./images/pikachu.png" alt="Pikachu">
-                        </div>
-
-                        <div class="pokemon-attributes">
-                            <img src="./images/first-edition.png" alt="First edition" class="first-edition">
-                            <p>Mouse Pokemon. Length: 1' 4", Weight: 13lbs.</p>
-                        </div>
-                    </div>
-
-                    <div class="container is-wide">
-                        <div class="pokemon-moves">
-                            <div class="move">
-                                <img src="./images/star.png" alt="Star power" class="icon">
-                                <p class="name"><strong>Gnaw</strong></p>
-                                <p class="score">10</p>
+                                <div class="power">
+                                    <span>40 HP</span>
+                                    <img src="./images/lightning.png" alt="Lightning power" class="icon">
+                                </div>
                             </div>
                             
-                            <div class="move">
-                                <div class="icons">
-                                    <img src="./images/lightning.png" alt="Star power" class="icon">
+                            <div class="image">
+                                <img src="./images/pikachu.png" alt="Pikachu">
+                            </div>
+
+                            <div class="pokemon-attributes">
+                                <img src="./images/first-edition.png" alt="First edition" class="first-edition">
+                                <p>Mouse Pokemon. Length: 1' 4", Weight: 13lbs.</p>
+                            </div>
+                        </div>
+
+                        <div class="container is-wide">
+                            <div class="pokemon-moves">
+                                <div class="move">
                                     <img src="./images/star.png" alt="Star power" class="icon">
+                                    <p class="name"><strong>Gnaw</strong></p>
+                                    <p class="score">10</p>
                                 </div>
                                 
-                                <p class="name"><strong>Thunder Jolt</strong> Flip a coin. If tails, Pikachu does 10 damage to itself.</p>
-                                <p class="score">30</p>
-                            </div>
-                        </div>
-                        
-                        <div class="pokemon-reactions">
-                            <div class="reaction">
-                                <p class="name">weakness</p>
-                                <img src="./images/fighting.png" alt="Fighting power" class="icon">
-                            </div>
-                            
-                            <div class="reaction">
-                                <p class="name">resistance</p>
+                                <div class="move">
+                                    <div class="icons">
+                                        <img src="./images/lightning.png" alt="Star power" class="icon">
+                                        <img src="./images/star.png" alt="Star power" class="icon">
+                                    </div>
+                                    
+                                    <p class="name"><strong>Thunder Jolt</strong> Flip a coin. If tails, Pikachu does 10 damage to itself.</p>
+                                    <p class="score">30</p>
+                                </div>
                             </div>
                             
-                            <div class="reaction">
-                                <p class="name">retreat cost</p>
-                                <img src="./images/star.png" alt="Star power" class="icon">
+                            <div class="pokemon-reactions">
+                                <div class="reaction">
+                                    <p class="name">weakness</p>
+                                    <img src="./images/fighting.png" alt="Fighting power" class="icon">
+                                </div>
+                                
+                                <div class="reaction">
+                                    <p class="name">resistance</p>
+                                </div>
+                                
+                                <div class="reaction">
+                                    <p class="name">retreat cost</p>
+                                    <img src="./images/star.png" alt="Star power" class="icon">
+                                </div>
                             </div>
+                            
+                            <p class="pokemon-fact">
+                                When several of these Pokemon gather, their electricity can cause lightning storms. <span>LV. 12</span> #25
+                            </p>
                         </div>
-                        
-                        <p class="pokemon-fact">
-                            When several of these Pokemon gather, their electricity can cause lightning storms. <span>LV. 12</span> #25
-                        </p>
-                    </div>
 
-                    <div class="card-info">
-                        <strong>Illus. Mitsuhiro Arita</strong> &copy; 1995, 96, 98, 99 Nintendo, Creatures, GAMEFREAK. &copy; 1999 Wizards. <strong>58/102</strong>
+                        <div class="card-info">
+                            <strong>Illus. Mitsuhiro Arita</strong> &copy; 1995, 96, 98, 99 Nintendo, Creatures, GAMEFREAK. &copy; 1999 Wizards. <strong>58/102</strong>
+                        </div>
+                    </div>
+                    <div class="back">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        const card = document.querySelector('.card');
+
+        card.addEventListener('click', () => {
+            card.classList.toggle('rotated');
+        });
+    </script>
 </body>
 </html>
