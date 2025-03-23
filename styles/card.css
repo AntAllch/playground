@@ -1,0 +1,64 @@
+:root {
+    --gold: #E2A506;
+    --gold-darker: #D68A02;
+    --yellow: #E1BF24;
+    --red: #d60000;
+
+    --fs-tiny: 10px;
+    --fs-title: 25px;
+}
+
+.card {
+    background: var(--gold); 
+    padding: 20px;
+    border-radius: 14px;
+
+    .inner {
+        width: 400px;
+        background: var(--yellow);
+
+        .icon {
+            width: 20px;
+        }
+
+        .card-type {
+            font-size: var(--fs-tiny);
+            padding-top: .5rem;
+        }
+
+        .pokemon-intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                font-size: var(--fs-title);
+            }
+            
+            .power {
+                display: flex;
+                align-items: center;
+
+                span {
+                    font-size: 1.4rem;
+                    color: var(--red);
+                    margin-right: 1rem;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .image {
+            border: solid 7px var(--gold);
+            border-right-color: var(--gold-darker);
+            border-bottom-color: var(--gold-darker);
+            height: 256px;
+            
+            img {
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
