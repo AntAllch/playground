@@ -10,7 +10,7 @@
     --fs-small: 13px;
     --fs-smaller: 10.5px;
     --fs-tiny: 10px;
-    --fs-micro: 8px;
+    --fs-micro: 7.2px;
 
     --fw-bold: 800;
     --fw-semi-bold: 700;
@@ -21,16 +21,14 @@
 }
 
 .card {
-    background: var(--gold); 
-    padding: 20px;
+    /* background: var(--gold);  */
+    padding: 0px;
     /* transform: rotateY(45deg); */
     width: 400px;
-    height: 575px;
-    border-radius: 14px;
+    /* height: auto; */
 
     .inner {
         width: 100%;
-        height: 50%;
         position: relative;
 
         .front,
@@ -39,10 +37,12 @@
             width: 100%;
             top: 0;
             left: 0;
+            border-radius: 14px;
         }
             
          .front {        
             background: var(--yellow);
+            border: solid 20px var(--gold);
             /* opacity: .5; */
 
             .icon {
@@ -106,7 +106,7 @@
                     font-size: var(--fs-smaller);
                     font-weight: 700;
                     display: inline-block;
-                    padding: .2rem 1rem;
+                    padding: .2rem 1.3rem;
                     margin-top: 4px;
                 }
             }
@@ -202,7 +202,7 @@
         }
 
         .back {
-            background: red;
+            /* background: red; */
             height: 90px;
         }
     }
