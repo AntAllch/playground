@@ -4,9 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stefan's Pokemon Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/card.css">
 </head>
 <body>
-    
+    <div class="previewer">
+        <div class="example">
+            <img src="./images/preview-card.png" alt="">
+        </div>
+
+        <div class="coded">
+            <div class="card">
+                <div class="inner">
+                    <div class="container">
+                        <p class="card-type"><strong>Basic Pokemon</strong></p>
+                        
+                        <div class="pokemon-intro">
+                            <h1 class="name">Pikachu</h1>
+
+                            <div class="power">
+                                <span>40 HP</span>
+                                <img src="./images/lightning.png" alt="Lightning power" class="icon">
+                            </div>
+                        </div>
+                        
+                        <div class="image">
+                            <img src="./images/pikachu.png" alt="Pikachu">
+                        </div>
+                    </div>
+
+                    <div class="container is-wide">
+                        <div class="pokemon-attributes">
+                            <img src="./images/first-edition.png" alt="First edition" class="first-edition">
+                            <p>Mouse Pokemon. Length: 1' 4", Weight: 13lbs.</p>
+                        </div>
+                        
+                        <div class="pokemon-moves">
+                            <div class="move">
+                                <img src="./images/star.png" alt="Star power" class="icon">
+                                <p class="name">Gnaw</p>
+                                <p class="score">10</p>
+                            </div>
+                            
+                            <div class="move">
+                                <div class="icons">
+                                    <img src="./images/lightning.png" alt="Star power" class="icon">
+                                    <img src="./images/star.png" alt="Star power" class="icon">
+                                </div>
+                                
+                                <p class="name"><strong>Thunder Jolt</strong> Flip a coin. If tails, Pikachu does 10 damage to itself.</p>
+                                <p class="score">10</p>
+                            </div>
+                        </div>
+                        
+                        <div class="pokemon-reactions">
+                            <div class="reaction">
+                                <p class="name">weakness</p>
+                                <img src="./images/fighting.png" alt="Fighting power" class="icon">
+                            </div>
+                            
+                            <div class="reaction">
+                                <p class="name">resistance</p>
+                            </div>
+                            
+                            <div class="reaction">
+                                <p class="name">retreat cost</p>
+                                <img src="./images/star.png" alt="Star power" class="icon">
+                            </div>
+                        </div>
+                        
+                        <p class="pokemon-fact">
+                            When several of these Pokemon gather, their electricity can cause lightning storms. <span>LV. 12</span> #25
+                        </p>
+                    </div>
+
+                    <div class="card-info">
+                        <strong>Illus. Mitsuhiro Arita</strong> &copy; 1995, 96, 98, 99 Nintendo, Creatures, GAMEFREAK. &copy; 1999 Wizards. <strong>58/102</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

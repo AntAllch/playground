@@ -2,8 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Inter;
 }
 
-body {
-    
+.container {
+    max-width: 90%;
+    margin-inline: auto;
+}
+
+.container.is-wide {
+    max-width: 95%;
+    margin-inline: auto;
+}
+
+.previewer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:cornflowerblue
+}
+
+.previewer .example {
+    height: 50%;
+}
+
+.previewer .coded {
+    height: 50%;
+}
+
+.previewer img {
+    width: 350px
 }
