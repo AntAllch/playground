@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Inter;
+    font-family: 'Inter';
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color:cornflowerblue
 }
 
 .container {
@@ -16,19 +23,14 @@
 }
 
 .previewer {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:cornflowerblue
 }
-
+/* 
 .previewer .example {
     height: 50%;
-}
+} */
 
 .previewer .coded {
-    height: 50%;
+    height: 100%;
 }
 
 .previewer img {

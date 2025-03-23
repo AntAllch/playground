@@ -208,9 +208,11 @@
         }
 
         .back {
-            background: red;
             height: 100%;
-            /* transform: rotateY(180deg); */
+            transform: rotateY(180deg);
+            background: url('../images/card-back.png');
+            background-size: cover;
+            border-radius: 14px;
         }
     }
 }
