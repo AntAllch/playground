@@ -62,7 +62,7 @@
             
          .front {        
             background: var(--yellow);
-            background: url('../images/bg-noise.jpg');
+            background: url('../stef-images/bg-noise.jpg');
             background-size: cover;
             border: solid 20px var(--gold);
 
@@ -247,7 +247,7 @@
         .back {
             height: 100%;
             transform: rotateY(180deg);
-            background: url('../images/card-back.png'), #192653;
+            background: url('../stef-images/card-back.png'), #192653;
             background-size: cover;
             border-radius: 15px;
         }
