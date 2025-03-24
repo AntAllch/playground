@@ -5,7 +5,7 @@
     --red: #d60000;
     --black: #111111;
 
-    --fs-title: 25px;
+    --fs-title: 29px;
     --fs-medium: 18px;
     --fs-small: 13px;
     --fs-smaller: 10.5px;
@@ -85,6 +85,7 @@
 
                 h1 {
                     font-size: var(--fs-title);
+                    font-weight: 600;
                 }
                 
                 .power {
@@ -104,12 +105,13 @@
                 border: solid 7px var(--gold);
                 border-right-color: var(--gold-darker);
                 border-bottom-color: var(--gold-darker);
-                height: 231px;
+                /* width: 310px; */
+                height: 230px;
                 /* padding: 7px; */
                 /* background: red; */
                 
                 img {
-                    object-fit: contain;
+                    object-fit: cover;
                     width: 100%;
                     height: 100%;
                 }
@@ -121,9 +123,9 @@
 
                 img {
                     position: absolute;
-                    left: -10px;
+                    left: -11px;
                     top: 4px;
-                    width: 30px;
+                    width: 27px;
                     transform: scale(.2);
                     opacity: 0;
                     transition: all .5s cubic-bezier(.47,1.64,.41,.8);
@@ -197,6 +199,7 @@
 
                 .reaction {
                     text-align: center;
+                    font-weight: 600;
                 }
             }
 
@@ -252,6 +255,7 @@
         overflow: hidden;
         z-index: 99;
         border-radius: 16px;
+        pointer-events: none;
     }
 
     .shimmer::before {
