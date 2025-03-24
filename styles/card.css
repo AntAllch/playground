@@ -18,10 +18,16 @@
 
 .coded {
     perspective: 1000px;
+    display: grid;
+    place-items: center;
 }
 
 .card.rotated {
     transform: rotateY(180deg); /* Rotate the card */
+}
+
+.card.full-rotation {
+    transform: rotateY(360deg); /* Rotate the card */
 }
 
 .card {
@@ -41,13 +47,13 @@
         
         .front,
         .back {
-            filter: blur(0.45px);
             position: absolute;
             width: 100%;
             top: 0;
             left: 0;
             border-radius: 14px;
             backface-visibility: hidden;
+            /* filter: blur(0.45px); */
             overflow: hidden;
         }
             
@@ -56,7 +62,6 @@
             background: url('../images/bg-noise.jpg');
             background-size: cover;
             border: solid 20px var(--gold);
-            /* opacity: .5; */
 
             .icon {
                 width: 20px;
@@ -99,7 +104,7 @@
                 border: solid 7px var(--gold);
                 border-right-color: var(--gold-darker);
                 border-bottom-color: var(--gold-darker);
-                height: 230px;
+                height: 231px;
                 /* padding: 7px; */
                 /* background: red; */
                 
@@ -119,6 +124,14 @@
                     left: -10px;
                     top: 4px;
                     width: 30px;
+                    transform: scale(.2);
+                    opacity: 0;
+                    transition: all .5s cubic-bezier(.47,1.64,.41,.8);
+                }
+                
+                img.reveal {
+                    transform: scale(1);
+                    opacity: 1;
                 }
 
                 p {

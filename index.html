@@ -15,9 +15,13 @@
         </div> -->
 
         <div class="coded">
-            <button class="full-exp">Animate</button>
-            <button class="rotate">Rotate</button>
-            <button class="shiny">Shimmer</button>
+            <div class="controls">
+                <button class="full-exp">Animate</button>
+                <button class="rotate">Rotate</button>
+                <button class="full-rotation">Full rotation</button>
+                <button class="shiny">Shimmer</button>
+                <button class="first-edition">First edition</button>
+            </div>
 
             <div class="card">
                 <div class="shimmer"></div>
@@ -36,7 +40,7 @@
                             </div>
                             
                             <div class="image">
-                                <img src="./images/pikachu.png" alt="Pikachu">
+                                <img src="./images/pikachu.jpg" alt="Pikachu">
                             </div>
 
                             <div class="pokemon-attributes">
@@ -101,11 +105,18 @@
         const shimmer = document.querySelector('.shimmer');
 
         const rotate = document.querySelector('.rotate');
+        const fullRotation = document.querySelector('.full-rotation');
         const shiny = document.querySelector('.shiny');
         const fullExp = document.querySelector('.full-exp');
+        const firstEdition = document.querySelector('.first-edition');
+        const firstEditionIcon = document.querySelector('.pokemon-attributes img');
 
         rotate.addEventListener('click', () => {
             card.classList.toggle('rotated');
+        });
+
+        fullRotation.addEventListener('click', () => {
+            card.classList.toggle('full-rotation');
         });
         
         shiny.addEventListener('click', () => {
@@ -115,6 +126,10 @@
         fullExp.addEventListener('click', () => {
             card.classList.toggle('rotated');
             shimmer.classList.toggle('rotated');
+        });
+
+        firstEdition.addEventListener('click', () => {
+            firstEditionIcon.classList.toggle('reveal');
         });
     </script>
 </body>
