@@ -1,5 +1,5 @@
 :root {
-    --gold: #E2A506;
+    --gold: #E0A100;
     --gold-darker: #D68A02;
     --yellow: #E1BF24;
     --red: #d60000;
@@ -51,6 +51,8 @@
             
          .front {        
             background: var(--yellow);
+            background: url('../images/bg-noise.jpg');
+            background-size: cover;
             border: solid 20px var(--gold);
             /* opacity: .5; */
 
