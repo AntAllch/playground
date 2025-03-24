@@ -16,6 +16,7 @@
 
         <div class="coded">
             <div class="card">
+                <div class="shimmer"></div>
                 <div class="inner">
                     <div class="front">
                         <div class="container">
@@ -93,9 +94,11 @@
 
     <script>
         const card = document.querySelector('.card');
+        const shimmer = document.querySelector('.shimmer');
 
         card.addEventListener('click', () => {
             card.classList.toggle('rotated');
+            shimmer.classList.toggle('rotated');
         });
     </script>
 </body>
