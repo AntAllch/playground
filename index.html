@@ -15,6 +15,10 @@
         </div> -->
 
         <div class="coded">
+            <button class="full-exp">Animate</button>
+            <button class="rotate">Rotate</button>
+            <button class="shiny">Shimmer</button>
+
             <div class="card">
                 <div class="shimmer"></div>
                 <div class="inner">
@@ -96,7 +100,19 @@
         const card = document.querySelector('.card');
         const shimmer = document.querySelector('.shimmer');
 
-        card.addEventListener('click', () => {
+        const rotate = document.querySelector('.rotate');
+        const shiny = document.querySelector('.shiny');
+        const fullExp = document.querySelector('.full-exp');
+
+        rotate.addEventListener('click', () => {
+            card.classList.toggle('rotated');
+        });
+        
+        shiny.addEventListener('click', () => {
+            shimmer.classList.toggle('rotated');
+        });
+        
+        fullExp.addEventListener('click', () => {
             card.classList.toggle('rotated');
             shimmer.classList.toggle('rotated');
         });

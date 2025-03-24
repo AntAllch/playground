@@ -36,3 +36,10 @@ body {
 .previewer img {
     width: 350px
 }
+
+button {
+    margin-bottom: 2rem;
+    margin-right: 1rem;;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
