@@ -162,7 +162,7 @@
                     border-bottom: solid 2px var(--black);
 
                     .name {
-                        font-size: var(--fs-small);
+                        font-size: 15px;
 
                         strong {
                             font-size: var(--fs-medium);
