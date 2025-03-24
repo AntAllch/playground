@@ -62,6 +62,11 @@
                 height: 20px;
             }
 
+            .icon.is-small {
+                width: 18px;
+                height: 18px;
+            }
+
             .card-type {
                 font-size: var(--fs-tiny);
                 padding-top: .5rem;
