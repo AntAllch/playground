@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+
+    <title>Pokemon Entries</title>
+</head>
+<body>
+    <style>
+        body {
+            height: 100vh;
+            background: #050728;
+            display: grid;
+            place-items: center;
+            font-family: "Gill Sans", system-ui;
+            text-transform: uppercase;
+            font-weight: bold;
+
+            .container {
+                max-width: 1400px;
+                margin-inline: auto;
+            }
+
+            .flex {
+                display: flex;
+                gap: 2rem;
+            }
+
+            a {
+                color: rgb(205, 241, 255);
+                text-decoration: none;
+            }
+
+            .left,
+            .right {
+                background: radial-gradient(#1F699C, #021B3A);
+                border-radius: 20px;
+                display: grid;
+                place-items: center;
+                width: 300px;
+                height: 300px;
+                border: solid 6px rgb(0, 183, 255);
+            }
+
+            h1 {
+                color: white;
+                font-size: 8rem;
+                margin: 0;
+            }
+        }
+    </style>
+
+    <h1>Pokemon</h1>
+    
+    <div class="container">
+        <div class="flex">
+            <a href="#" class="left">
+                <h2>Stefan's entry</h2>
+            </a>
+
+            <a href="#" class="right">
+                <h2>Ant's entry</h2>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
