@@ -29,7 +29,10 @@
     width: 400px;
     transition: transform 0.8s ease;
     transform-style: preserve-3d;
-
+    border-radius: 25px;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
     .inner {
         position: relative;
         width: 100%;
@@ -215,4 +218,30 @@
             border-radius: 14px;
         }
     }
+}
+
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    background: var(--black);
+    width: 60%;
+    height: 60%;
+    bottom: 4px;
+    border-radius: 10px;
+    filter: blur(10px);
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.card::before {
+    transform: skewY(-5.5deg);
+    transform-origin: right;
+    left: 18px;
+}
+
+.card::after {
+    transform: skewY(5.5deg);
+    transform-origin: left;
+    right: 18px;
 }
