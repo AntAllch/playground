@@ -1,0 +1,32 @@
+.coded, 
+.reference {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 1s ease, opacity .3s linear;
+}
+
+.coded.revealed,
+.reference.revealed {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.hero-title {
+    opacity: 0;
+    transition: opacity .3s linear;
+}
+
+.hero-title strong {
+    text-indent: 2.34em;
+    transition: text-indent 1s ease;
+}
+
+.hero-title.revealed {
+    opacity: 1;
+    transition: text-indent .5 ease;
+}
+
+.hero-title.revealed strong {
+    text-indent: -1.66em !important;
+    transition: text-indent .5 ease;
+}
