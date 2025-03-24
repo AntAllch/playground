@@ -53,7 +53,7 @@
             left: 0;
             border-radius: 14px;
             backface-visibility: hidden;
-            /* filter: blur(0.45px); */
+            filter: blur(0.35px);
             overflow: hidden;
         }
             
