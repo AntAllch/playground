@@ -1,3 +1,8 @@
+:root {
+    --gold: #E0A100;
+    --gold-darker: #D68A02;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +14,7 @@ body {
     height: 100vh;
     display: grid;
     place-items: center;
-    background-color: cornflowerblue
+    background-color: rgb(9, 17, 31)
 }
 
 .container {
@@ -22,49 +27,80 @@ body {
     margin-inline: auto;
 }
 
-.previewer .coded {
-    height: 100%;
-}
+.previewer {
+    display: flex;
+    gap: 6rem;
 
-.previewer img {
-    width: 350px
+    .reference {
+        img {
+            width: 400px;
+        }
+    }
+
+    .coded {
+        height: 100%;
+        position: relative;
+
+        .controls {
+            position: absolute;
+            right: -70px;
+            top: 10px;
+            z-index: 99999;
+            display: grid;
+            gap: 1rem;
+
+            button {
+                width: 50px;
+                height: 50px;
+                display: grid;
+                place-items: center;
+            }
+        }
+    }
+
+    img {
+        width: 350px
+    }
 }
 
 button {
-    margin-bottom: 2rem;
-    margin-right: 1rem;;
-    padding: .5rem 1rem;
+    background-color: #27314d;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+    color: white;
     cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-size: 14px;
+    font-weight: 500;
+    padding: .6rem 1rem;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms, border .3s cubic-bezier(.4, 0, .2, 1), color .3s ease, width .5s cubic-bezier(.47,1.9,.41,.8), height .5s cubic-bezier(.47,1.9,.41,.8);
+    width: auto;
+    border: solid 3px #27314d;
 }
 
-
-button {
-  background-color: #fff;
-  border-radius: 24px;
-  border-style: none;
-  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
-  color: #3c4043;
-  cursor: pointer;
-  display: inline-flex;
-  fill: currentcolor;
-  font-size: 14px;
-  font-weight: 500;
-  padding: .6rem 1rem;
-  justify-content: center;
-  letter-spacing: .25px;
-  line-height: normal;
-  max-width: 100%;
-  overflow: visible;
-  position: relative;
-  text-align: center;
-  text-transform: none;
-  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms, border .3s cubic-bezier(.4, 0, .2, 1);
-  width: auto;
-  border: solid 3px white;
-}
-
-button:hover {
-  background: #F6F9FE;
+button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: linear-gradient(-45deg, #d65702, #ffb700);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: .5;
+    transition: width .5s cubic-bezier(.47, 1.9, .41, .8), height .5s cubic-bezier(.47, 1.9, .41, .8), opacity .5s ease, color .3s ease;
 }
 
 button:active {
@@ -73,5 +109,21 @@ button:active {
 }
 
 button.active {
-    border: solid 3px navy;
+    color: rgb(255, 194, 151);
+}
+
+button.active::before {
+    opacity: 1;
+    width: 130%;
+    height: 130%;
+}
+
+button:not(.active) {
+    color: white;
+}
+
+button:not(.active)::before {
+    opacity: .5;
+    width: 80%;
+    height: 80%;
 }

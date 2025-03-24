@@ -5,17 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stefan's Pokémon Card</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/card.css">
 </head>
 <body>
     <div class="previewer">
+        <div class="reference">
+            <img src="./images/preview-card.png" alt="">
+        </div>
         <div class="coded">
             <div class="controls">
-                <button class="rotate">Rotate</button>
-                <button class="half-rotation">1/2 Rotate</button>
-                <button class="shiny">Shimmer</button>
-                <button class="first-edition active">First edition</button>
+                <button class="rotate">
+                    <i class="fa-solid fa-rotate"></i>
+                </button>
+
+                <button class="half-rotation">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </button>
+
+                <button class="shiny">
+                    <i class="fa-solid fa-wand-sparkles"></i>
+                </button>
+
+                <button class="first-edition active">
+                    <i class="fa-solid fa-award"></i>
+                </button>
             </div>
 
             <div class="card">
