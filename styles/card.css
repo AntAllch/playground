@@ -6,6 +6,7 @@
     --black: #111111;
 
     --fs-title: 25px;
+    --fs-subtitle: 30px;
     --fs-medium: 18px;
     --fs-small: 14px;
     --fs-smaller: 10.5px;
@@ -110,12 +111,12 @@
                 border: solid 7px var(--gold);
                 border-right-color: var(--gold-darker);
                 border-bottom-color: var(--gold-darker);
-                height: 231px;
+                height: 232px;
                 /* padding: 7px; */
                 /* background: red; */
                 
                 img {
-                    object-fit: contain;
+                    object-fit: cover;
                     width: 100%;
                     height: 100%;
                 }
@@ -169,7 +170,7 @@
                     }
 
                     .score {
-                        font-size: var(--fs-title);
+                        font-size: var(--fs-subtitle);
                     }
 
                     .icons {
@@ -213,7 +214,7 @@
                 font-weight: var(--fw-semi-bold);
                 font-style: italic;
                 border: solid 2px var(--gold);
-                line-height: 1.5;
+                line-height: 1.4;
                 padding-inline: .5rem;
                 margin-inline: .5rem;
                 margin-top: .2rem;
