@@ -7,14 +7,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans';
 }
 
 body {
     height: 100vh;
     display: grid;
     place-items: center;
-    background-color: rgb(9, 17, 31)
+    background: url('../images/bg.jpg');
+    background-repeat: repeat;
 }
 
 .container {
@@ -30,7 +30,7 @@ body {
 .previewer {
     display: flex;
     gap: 6rem;
-
+    
     .reference {
         img {
             width: 400px;
