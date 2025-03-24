@@ -129,7 +129,7 @@
 
                 img {
                     position: absolute;
-                    left: -11px;
+                    left: -13px;
                     top: 4px;
                     width: 27px;
                     transform: scale(.2);
@@ -165,7 +165,7 @@
                         font-size: 15px;
 
                         strong {
-                            font-size: var(--fs-medium);
+                            font-size: 20px;
                             font-weight: 600;
                         }
                     }
@@ -215,7 +215,7 @@
                 font-weight: var(--fw-semi-bold);
                 font-style: italic;
                 border: solid 2px var(--gold);
-                line-height: 1.4;
+                line-height: 1.2;
                 padding-inline: .5rem;
                 margin-inline: .5rem;
                 margin-top: .2rem;
