@@ -13,7 +13,10 @@ const buttons = document.querySelectorAll('button');
 document.addEventListener('DOMContentLoaded', () => {    
     rotate.addEventListener('click', () => {
         card.classList.toggle('rotated');
-        shimmer.classList.toggle('rotated');
+    });
+    
+    fullRotation.addEventListener('click', () => {
+        card.classList.toggle('full-rotation');
     });
     
     shiny.addEventListener('click', () => {
@@ -21,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     fullExp.addEventListener('click', () => {
-        card.classList.toggle('full-rotation');
+        card.classList.toggle('rotated');
         shimmer.classList.toggle('rotated');
     });
     
