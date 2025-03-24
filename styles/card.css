@@ -41,6 +41,7 @@
         
         .front,
         .back {
+            filter: blur(0.45px);
             position: absolute;
             width: 100%;
             top: 0;
@@ -99,6 +100,8 @@
                 border-right-color: var(--gold-darker);
                 border-bottom-color: var(--gold-darker);
                 height: 230px;
+                /* padding: 7px; */
+                /* background: red; */
                 
                 img {
                     object-fit: contain;
