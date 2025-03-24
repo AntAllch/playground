@@ -111,6 +111,8 @@
         const firstEdition = document.querySelector('.first-edition');
         const firstEditionIcon = document.querySelector('.pokemon-attributes img');
 
+        const buttons = document.querySelectorAll('button');
+
         rotate.addEventListener('click', () => {
             card.classList.toggle('rotated');
         });
@@ -131,6 +133,12 @@
         firstEdition.addEventListener('click', () => {
             firstEditionIcon.classList.toggle('reveal');
         });
+
+        for(const button of buttons) {
+            button.addEventListener('click', () => {
+                button.classList.toggle('active');
+            });
+        }
     </script>
 </body>
 </html>
