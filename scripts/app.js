@@ -2,9 +2,8 @@ const card = document.querySelector('.card');
 const shimmer = document.querySelector('.shimmer');
 
 const rotate = document.querySelector('.rotate');
-const fullRotation = document.querySelector('.full-rotation');
+const halfRotation = document.querySelector('.half-rotation');
 const shiny = document.querySelector('.shiny');
-const fullExp = document.querySelector('.full-exp');
 const firstEdition = document.querySelector('.first-edition');
 const firstEditionIcon = document.querySelector('.pokemon-attributes img');
 
@@ -13,18 +12,15 @@ const buttons = document.querySelectorAll('button');
 document.addEventListener('DOMContentLoaded', () => {    
     rotate.addEventListener('click', () => {
         card.classList.toggle('rotated');
-    });
-    
-    fullRotation.addEventListener('click', () => {
-        card.classList.toggle('full-rotation');
-    });
-    
-    shiny.addEventListener('click', () => {
         shimmer.classList.toggle('rotated');
     });
     
-    fullExp.addEventListener('click', () => {
-        card.classList.toggle('rotated');
+    halfRotation.addEventListener('click', () => {
+        card.classList.toggle('half-rotation');
+        shimmer.classList.toggle('rotated');
+    });
+    
+    shiny.addEventListener('click', () => {
         shimmer.classList.toggle('rotated');
     });
     

@@ -7,10 +7,10 @@
 
     --fs-title: 25px;
     --fs-medium: 18px;
-    --fs-small: 13px;
+    --fs-small: 14px;
     --fs-smaller: 10.5px;
     --fs-tiny: 10px;
-    --fs-micro: 7.2px;
+    --fs-micro: 7.9px;
 
     --fw-bold: 800;
     --fw-semi-bold: 700;
@@ -23,11 +23,11 @@
 }
 
 .card.rotated {
-    transform: rotateY(180deg); /* Rotate the card */
+    transform: rotateY(360deg); /* Rotate the card */
 }
 
-.card.full-rotation {
-    transform: rotateY(360deg); /* Rotate the card */
+.card.half-rotation {
+    transform: rotateY(180deg); /* Rotate the card */
 }
 
 .card {
@@ -49,6 +49,7 @@
         .back {
             position: absolute;
             width: 100%;
+            height: 100%;
             top: 0;
             left: 0;
             border-radius: 14px;
@@ -85,11 +86,16 @@
 
                 h1 {
                     font-size: var(--fs-title);
+                    font-weight: 600;
                 }
                 
                 .power {
                     display: flex;
-                    align-items: center;
+
+                    .icon {
+                        width: 25px;
+                        height: 25px;
+                    }
 
                     span {
                         font-size: 1.4rem;
@@ -121,9 +127,9 @@
 
                 img {
                     position: absolute;
-                    left: -10px;
+                    left: -11px;
                     top: 4px;
-                    width: 30px;
+                    width: 27px;
                     transform: scale(.2);
                     opacity: 0;
                     transition: all .5s cubic-bezier(.47,1.64,.41,.8);
@@ -158,6 +164,7 @@
 
                         strong {
                             font-size: var(--fs-medium);
+                            font-weight: 600;
                         }
                     }
 
@@ -197,6 +204,7 @@
 
                 .reaction {
                     text-align: center;
+                    font-weight: 600;
                 }
             }
 
@@ -252,6 +260,7 @@
         overflow: hidden;
         z-index: 99;
         border-radius: 16px;
+        pointer-events: none;
     }
 
     .shimmer::before {
