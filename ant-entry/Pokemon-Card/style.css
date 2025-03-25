@@ -135,8 +135,10 @@ body{
     /* Mouse Pokemon. Lenngth:... */
     .card-banner{
         position: relative;
-        background-color: rgb(169, 144, 0);
-        background-image: url('#8A5B07');
+        /* background-color: rgb(169, 144, 0); */
+        /* background: linear-gradient(#936212 #000000); */
+        background-image: linear-gradient(to right, #a56e14, #ad8010, #dcbd6f, #ad8010, #a56e14);
+
         width: 83%;
         margin: 5px auto 0;
         padding-block: 2px 0;
