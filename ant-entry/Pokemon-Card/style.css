@@ -208,9 +208,9 @@ body{
 
     .card-tip{
         font-size: 0.65rem;
-        margin: 0 auto 0.6rem;
+        margin: 0 auto;
         width: fit-content;
-        padding-bottom: 0.5rem;
+        padding: 0.05rem 0.5rem;
         border: 2px solid rgb(169, 144, 0);
         font-style: italic;
 
