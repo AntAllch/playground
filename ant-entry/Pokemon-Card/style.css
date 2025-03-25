@@ -1,0 +1,306 @@
+:root{
+    --border-clr: #eead17;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: rgb(23, 28, 65); */
+    /* background-image: linear-gradient(to bottom right, rgb(23, 28, 65), rgb(31, 36, 73)); */
+    font-family: "Gill Sans";
+}
+
+.bg{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(36, 53, 98);
+    z-index: -2;
+
+    &::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgb(20, 28, 51);
+        clip-path: polygon(0 0, 55% 0, 45% 100%, 0% 100%);
+        /* z-index: -1; */
+        /* filter: blur(5px); */
+    }
+}
+
+.cards-group{
+    /* outline: 2px solid red; */
+    width: 80%;
+    justify-content: space-between;
+}
+
+/* -------------------------------------------------------------------- */
+
+.card{
+    position: relative;
+    width: 400px;
+    border-radius: 14px;
+    padding: 3px 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-block: 20px solid var(--border-clr);
+    border-left: 18px solid var(--border-clr);
+    border-right: 17px solid var(--border-clr);
+    background-image: url('./images/card-bg.png');
+    background-size: contain;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 6px 6px 10px; /* x y blur */
+
+    /* &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255 ,255, 255, 0.2);
+        mix-blend-mode: colorburn;
+        z-index: 1;
+    } */
+
+    /* ------------------------------------- */
+
+    .top-stats{
+        /* outline: 2px solid red; */
+
+        .name-health-power{
+            /* outline: 2px solid green; */
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            width: 93%;
+            margin: 5px auto -2px;
+            
+            .name-evo{
+                font-size: 1.4rem;
+
+                .pokemon-evo{
+                    font-size: 0.6rem;
+                    margin-left: 1px;
+                }
+            }
+
+            /* 40 HP Lightning symbol */
+            .health-power{
+                /* outline: 2px solid green; */
+                display: flex;
+                justify-content: center;
+                align-items: end;
+
+
+                .poke-hp{
+                    color: red;
+                    font-size: 1.4rem;
+                }
+
+                /* lightning symbol in the top right */
+                img{
+                    margin-left: 0.8rem;
+                    margin-bottom: 4px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    /* ------------------------------------- */
+
+    .card-image{
+        /* outline: 2px solid purple; */
+        width: 92%;
+        height: 220px;
+        margin: 0 auto;
+        border: 7px solid rgb(206, 161, 0);
+        background-image: url('./images/pikachu.jpeg');
+        background-size: cover;
+        background-position-x: -8px;
+
+    }
+
+    /* ------------------------------------- */
+    
+    /* Mouse Pokemon. Lenngth:... */
+    .card-banner{
+        position: relative;
+        background-color: rgb(169, 144, 0);
+        background-image: url('#8A5B07');
+        width: 83%;
+        margin: 5px auto 0;
+        padding-block: 2px 0;
+        text-align: center;
+        
+        .first-edition-logo{
+            width: 25px;
+            position: absolute;
+            top: -15%;
+            left: -10%;
+        }
+
+        p{
+            font-size: 0.65rem;
+            letter-spacing: 0.2px;
+            font-style: italic;
+        }
+    }
+
+    /* ------------------------------------- */
+
+    .top-attack{
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 28px 10px 16px;
+    }
+
+    /* ------------------------------------- */
+
+    .bottom-attack{
+      width: 100%;
+      margin-block: 0.5rem 0.1rem;
+      padding-block: 0px 12px;
+      align-items: center;
+
+      .symbol-group{
+        margin-bottom: 0.9rem;
+      }
+
+      /* ...Flip a coin. If tails, */
+      .attack-desc{
+          font-size: 1rem;
+          margin-inline: 4px 23px;
+      }
+
+    }
+
+    /* ------------------------------------- */
+
+    .vulnerable-stats{
+        justify-content: space-between;
+        margin: -0.16rem 0.8rem 0;
+        
+        .vs-group{
+            text-align: center;
+            font-size: 0.7rem;
+
+            img{
+                margin-top: -0.15rem;
+            }
+        }
+    }
+
+    /* ------------------------------------- */
+
+    .card-tip{
+        font-size: 0.65rem;
+        margin: 0 auto 0.6rem;
+        width: fit-content;
+        padding: 0.05rem 0.5rem;
+        border: 2px solid rgb(169, 144, 0);
+        font-style: italic;
+
+        p{
+            white-space: pre;
+        }
+    }
+
+    /* ------------------------------------- */
+
+    .facts-text{
+        position: absolute;
+        bottom: -0.4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0.2rem;
+        font-size: 0.455rem;
+
+        .dates{
+            font-size: 0.47rem;
+        }
+
+        .num-group{
+            align-items: center;
+
+            .num-version{
+                font-size: 0.6rem;
+            }
+    
+            .dot{
+                font-size: 1.5rem;
+                margin-left: 0.2rem;
+            }
+        }
+    }
+}
+
+/* ---------------------------------------------------------------- */
+
+.original-card{
+    /* outline: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 545.33px;
+    overflow: hidden;
+
+    img{
+        width: 610px;
+        margin-right: 15px;
+        margin-top: 5px;
+    }
+}
+
+/* ultility classes */
+
+.symbol-width-md{
+    width: 22px;
+    height: 22px;
+}
+
+.symbol-width-sm{
+    width: 20px;
+    height: 20px;
+}
+
+.symbol-width-lg{
+    width: 25px;
+    height: 25px;
+}
+
+.attack{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.damage{
+    font-size: 1.8rem;
+}
+
+.flex{
+    display: flex;
+}
+
+.border-bottom{
+    border-bottom: 2px solid black;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
