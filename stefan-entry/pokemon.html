@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefan's Pokémon Card</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./stefs-styles/main.css">
+    <link rel="stylesheet" href="./stefs-styles/card.css">
+    <link rel="stylesheet" href="./stefs-styles/hero.css">
+    <link rel="stylesheet" href="./stefs-styles/animations.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-wrapper">
+            <div class="hero-block">
+                <h1 class="hero-title animate">
+                <span class="hero-title-text">
+                    <strong>Pokémon</strong>
+                    Card club
+                    </span>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="previewer">
+        <div class="reference animate">
+            <img src="./stef-images/preview-card.png" alt="">
+        </div>
+        
+        <div class="coded animate">
+            
+            <div class="controls">
+                <a href="/" class="button">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+                    
+                <button class="rotate">
+                    <i class="fa-solid fa-rotate"></i>
+                </button>
+
+                <button class="half-rotation">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </button>
+
+                <button class="shiny">
+                    <i class="fa-solid fa-wand-sparkles"></i>
+                </button>
+
+                <button class="first-edition active">
+                    <i class="fa-solid fa-award"></i>
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="shimmer"></div>
+                <div class="inner">
+                    <div class="front">
+                        <div class="container">
+                            <p class="card-type"><strong>Basic Pokémon</strong></p>
+                            
+                            <div class="pokemon-intro">
+                                <h1 class="name">Pikachu</h1>
+
+                                <div class="power">
+                                    <span>40 HP</span>
+                                    <img src="./stef-images/electric.png" alt="Electric power" class="icon">
+                                </div>
+                            </div>
+                            
+                            <div class="image">
+                                <img src="./stef-images/pikachu.jpg" alt="Pikachu">
+                            </div>
+
+                            <div class="pokemon-attributes">
+                                <img src="./stef-images/first-edition.png" alt="First edition" class="first-edition reveal">
+                                <p>Mouse Pokémon. Length: 1' 4", Weight: 13lbs.</p>
+                            </div>
+                        </div>
+
+                        <div class="container is-wide">
+                            <div class="pokemon-moves">
+                                <div class="move">
+                                    <img src="./stef-images/normal.png" alt="normal power" class="icon">
+                                    <p class="name"><strong>Gnaw</strong></p>
+                                    <p class="score">10</p>
+                                </div>
+                                
+                                <div class="move">
+                                    <div class="icons">
+                                        <img src="./stef-images/electric.png" alt="normal power" class="icon">
+                                        <img src="./stef-images/normal.png" alt="normal power" class="icon">
+                                    </div>
+                                    
+                                    <p class="name"><strong>Thunder Jolt</strong> Flip a coin. If tails, Pikachu does 10 damage to itself.</p>
+                                    <p class="score">30</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pokemon-reactions">
+                                <div class="reaction">
+                                    <p class="name">weakness</p>
+                                    <img src="./stef-images/fighting.png" alt="Fighting power" class="icon is-small">
+                                </div>
+                                
+                                <div class="reaction">
+                                    <p class="name">resistance</p>
+                                </div>
+                                
+                                <div class="reaction">
+                                    <p class="name">retreat cost</p>
+                                    <img src="./stef-images/normal.png" alt="normal power" class="icon is-small">
+                                </div>
+                            </div>
+                            
+                            <p class="pokemon-fact">
+                                When several of these Pokémon gather, their electricity can cause lightning storms. <span>LV. 12</span> #25
+                            </p>
+                        </div>
+
+                        <div class="card-info">
+                            <strong>Illus. Mitsuhiro Arita</strong> &copy; 1995, 96, 98, 99 Nintendo, Creatures, GAMEFREAK. &copy; 1999 Wizards. <strong>58/102</strong>
+                        </div>
+                    </div>
+                    <div class="back">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./stef-scripts/app.js"></script>
+</body>
+</html>
