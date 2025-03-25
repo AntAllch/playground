@@ -107,6 +107,10 @@ button {
     border: solid 3px #27314d;
 }
 
+button a {
+    color: white;
+}
+
 button::before {
     content: "";
     position: absolute;
