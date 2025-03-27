@@ -1,0 +1,78 @@
+.card{
+    width: 435px;
+    padding-inline: 1.5rem;
+    background-image: url('./Images/bg-texture.jpg');
+    border: 25px solid black;
+    border-radius: 20px;
+
+    /* ------------------------------------------------------ */
+
+    .title-group{
+        justify-content: space-between;
+        align-items: end;
+        padding-block: 0.2rem;
+
+        .card-title{
+            line-height: 0.7;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        .number{
+            background-color: var(--third-clr);
+            width: var(--symbol-wh);
+            height: var(--symbol-wh);
+            font-size: 1.7rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .symbol{
+            width: var(--symbol-wh);
+            height: var(--symbol-wh);
+            aspect-ratio: 1;
+        }
+    }
+
+    /* ------------------------------------------------- */
+    
+    .worm-image{
+        position: relative;
+        width: 100%;
+        height: 280px;
+        border-top: 5px solid var(--dark-border-clr);
+        border-right: 5px solid var(--dark-border-clr);
+        border-bottom: 5px solid var(--light-border-clr);
+        border-left: 5px solid var(--light-border-clr);
+        background-image: url('./Images/scoria-wurm.jpg');
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+
+
+        /* .diagnol-line{
+            position: absolute;
+            width: 5px;
+            height: 50px;
+            background-color: black;
+            transform-origin: bottom-left;
+            transform: rotate(-45deg);
+
+            &:nth-of-type(3){
+                bottom: 0;
+                left: 0;
+            }
+
+            &:nth-of-type(2n + 1){
+                background-color: orange;
+                transform: rotate(45deg);
+            }
+
+        } */
+    }
+}
+
+

@@ -1,0 +1,49 @@
+:root{
+    --primary-clr: #000;
+    --secondary-clr: #ececec;
+    --light-border-clr: #cd745f;
+    --dark-border-clr: #563028;
+    --tertiary-clr: #b06a5b;
+    --symbol-wh: 24px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Beleren';
+    src: url('./font/MagicCardsNormal.ttf');
+}
+
+body {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+}
+
+.card-title{
+    font-family: 'Beleren';
+}
+
+.card-title,
+.action,
+.illustrator,
+.issue-number{
+    color: var(--secondary-clr);
+}
+
+.flex{
+    display: flex;
+}
+
+/* .hidden{
+    display: none;
+} */
+
+.reference-card{
+    width: 430px;
+}
