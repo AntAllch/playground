@@ -1,10 +1,13 @@
 :root{
     --primary-clr: #000;
     --secondary-clr: #ececec;
-    --light-border-clr: #cd745f;
-    --dark-border-clr: #563028;
+    --third-clr: #9d9d9d;
+    --light-inner-border-clr: #cd745f;
+    --dark-inner-border-clr: #563028;
+    --light-outer-border-clr: #81655f;
+    --dark-outer-border-clr: rgb(65, 41, 36);
     --tertiary-clr: #b06a5b;
-    --symbol-wh: 24px;
+    --symbol-wh: 21px;
 }
 
 *{
@@ -15,8 +18,9 @@
 
 @font-face {
     font-family: 'Beleren';
-    src: url('./font/MagicCardsNormal.ttf');
+    src: url('./font/Planewalker-38m6.ttf');
 }
+
 
 body {
     display: grid;
