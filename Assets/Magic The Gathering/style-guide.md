@@ -8,3 +8,7 @@ Late at night, ululations echo from deep under Shiv, as the worms sing of times 
 Illus. Steve Firchow
 
 (Copyright symbol) 1993-1998 Wizards of the Coast, Inc. 212/350
+
+FONT FOR CARD TITLE - MagicCardsNormal.ttf
+
+FONT FOR THE REST OF THE CARD - Times New Roman
