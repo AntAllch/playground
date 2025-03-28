@@ -37,7 +37,7 @@ body {
 }
 
 .card-title,
-.action,
+.move-name,
 .illustrator,
 .issue-number{
     color: var(--secondary-clr);
