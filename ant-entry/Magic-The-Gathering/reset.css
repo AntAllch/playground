@@ -1,6 +1,6 @@
 :root{
     --primary-clr: #000;
-    --secondary-clr: #ececec;
+    --secondary-clr: #d7d7d7;
     --third-clr: #9d9d9d;
     --light-inner-border-clr: #cd745f;
     --dark-inner-border-clr: #563028;
@@ -18,9 +18,8 @@
 
 @font-face {
     font-family: 'Beleren';
-    src: url('./font/Planewalker-38m6.ttf');
+    src: url('./font/MagicCardsNormal.ttf');
 }
-
 
 body {
     display: grid;
