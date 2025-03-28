@@ -7,26 +7,29 @@
     border-right: 2.5px solid var(--light-outer-border-clr);
     border-bottom: 2.5px solid var(--dark-outer-border-clr);
     border-left: 2.5px solid var(--dark-outer-border-clr);
+    outline: 1px solid rgba(0, 0, 0, 0.5);
+    outline-offset: -3.8px;
+
     
     &::before{
         content: "";
         position: absolute;
-        width: calc(100% + 3.5rem);
-        height: calc(100% + 3.5rem);
+        width: calc(100% + var(--black-border-width));
+        height: calc(100% + var(--black-border-width));
         background-color: black;
-        top: -1.75rem;
-        left: -1.75rem;
+        top: calc(-1 * var(--black-border-width) / 2);
+        left: calc(-1 * var(--black-border-width) / 2);
         border-radius: 20px;
         z-index: -1;
     }
-
+    
     /* ------------------------------------------------------ */
-
+    
     .title-group{
         justify-content: space-between;
         align-items: end;
-        padding-block: 0.2rem;
-
+        padding-block: 0.25rem;
+        
         .card-title{
             line-height: 0.7;
             font-size: 1.4rem;
@@ -42,21 +45,23 @@
                 background-color: var(--third-clr);
                 width: var(--symbol-wh);
                 height: var(--symbol-wh);
-                font-size: 1.7rem;
+                font-size: 1.6rem;
+                line-height: 1;
                 border-radius: 50%;
+                padding-left: 2px;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                /* align-items: center; */
             }
-    
+            
             .symbol{
                 width: var(--symbol-wh);
                 height: var(--symbol-wh);
             }
         }
-
+        
     }
-
+    
     /* ------------------------------------------------- */
     
     .worm-image{
@@ -71,8 +76,9 @@
         background-size: cover;
         background-position: center;
         margin: 0 auto;
-
-
+        box-shadow: 0 0 0 0.5px black;
+        
+        
         /* .diagnol-line{
             position: absolute;
             width: 5px;
