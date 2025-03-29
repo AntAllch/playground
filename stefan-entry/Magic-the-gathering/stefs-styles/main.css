@@ -1,0 +1,66 @@
+:root {
+    --gold: #E0A100;
+    --gold-darker: #D68A02;
+}
+
+@font-face {
+    font-family: 'MagicCardsNormal';
+    src: url('../stefan-font/MagicCardsNormal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #F4F2EC;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-family: MagicCardsNormal;
+}
+
+.container {
+    max-width: 88%;
+    margin-inline: auto;
+}
+
+.container.is-wide {
+    max-width: 93%;
+    margin-inline: auto;
+}
+
+.spaced {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.previewer {
+    display: flex;
+    gap: 6rem;
+    
+    .reference {
+        img {
+            width: 532px;
+            border-radius: 16px;
+        }
+    }
+
+    .coded {
+        height: 100%;
+        position: relative;
+    }
+
+    img {
+        width: 350px
+    }
+}
