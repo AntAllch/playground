@@ -13,59 +13,46 @@
     <style>
         body {
             height: 100vh;
-            background: #050728;
-            display: grid;
-            place-items: center;
-            font-family: "Gill Sans", system-ui;
-            text-transform: uppercase;
-            font-weight: bold;
+            background: #d2d2d6;
+            text-align: center;
+            margin-top: 4rem;
 
             .container {
                 max-width: 1400px;
                 margin-inline: auto;
-            }
-
-            .flex {
-                display: flex;
-                gap: 2rem;
+                margin-top: 2rem;
             }
 
             a {
-                color: rgb(205, 241, 255);
+                text-decoration: underline;
+                color: inherit;
+                font-size: 23px;
+                display: block;
+            }
+
+            a[href=""] {
+                color: red;
                 text-decoration: none;
+                cursor: auto;
             }
 
-            .left,
-            .right {
-                background: radial-gradient(#1F699C, #021B3A);
-                border-radius: 20px;
-                display: grid;
-                place-items: center;
-                width: 300px;
-                height: 300px;
-                border: solid 6px rgb(0, 183, 255);
-            }
-
-            h1 {
-                color: white;
-                font-size: 8rem;
-                margin: 0;
+            h2 {
+                margin-bottom: 0px;
             }
         }
     </style>
-
-    <h1>Pokemon</h1>
     
     <div class="container">
-        <div class="flex">
-            <a href="./stefan-entry/Pokemon-Card/pokemon.html" class="left">
-                <h2>Stefan's entry</h2>
-            </a>
+        <h1>Challenges</h1>
 
-            <a href="./ant-entry/Pokemon-Card/pokemon.html" class="right">
-                <h2>Ant's entry</h2>
-            </a>
-        </div>
+        <h2>Pokemon</h2>
+        <a href="./ant-entry/Pokemon-Card/pokemon.html">Ant</a>
+        <a href="./stefan-entry/Pokemon-Card/pokemon.html">Stefan</a>
+
+        <h2>Magic The Gathering</h2>
+        <a href="">Ant</a>
+        <a href="">Brandon</a>
+        <a href="./stefan-entry/Magic-the-gathering/mtg.html">Stefan</a>
     </div>
 
 </body>
