@@ -2,11 +2,11 @@
     --primary-clr: #000;
     --secondary-clr: #d7d7d7;
     --third-clr: #9c9c9c;
+    --tertiary-clr: #b06a5b;
     --light-inner-border-clr: #cd745f;
     --dark-inner-border-clr: #563028;
     --light-outer-border-clr: #81655f;
     --dark-outer-border-clr: rgb(65, 41, 36);
-    --tertiary-clr: #b06a5b;
 
     --symbol-wh: 20px;
 
@@ -38,19 +38,32 @@ body {
 
 .card-title,
 .move-name,
+.issue-number{
+    text-shadow: 1px 1px 1px black;
+}
+
+.card-title,
+.move-name,
 .illustrator,
 .issue-number{
     color: var(--secondary-clr);
+}
+
+.card-desc,
+.worm-image{
+    box-shadow: 0 0 0 0.5px black;
+    outline: 1px solid rgba(0, 0, 0, 0.5);
+    outline-offset: -5px;
 }
 
 .flex{
     display: flex;
 }
 
-/* .hidden{
-    display: none;
-} */
-
 .reference-card{
     width: 430px;
+}
+
+.hidden{
+    display: none;
 }
