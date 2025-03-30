@@ -3,6 +3,8 @@
     width: 386px;
     padding-inline: 1.5rem;
     background-image: url('./Images/bg-texture.jpg');
+    background-size: cover;
+    background-position: center;
     border-top: 2.5px solid var(--light-outer-border-clr);
     border-right: 2.5px solid var(--light-outer-border-clr);
     border-bottom: 2.5px solid var(--dark-outer-border-clr);
