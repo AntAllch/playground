@@ -1,6 +1,6 @@
 :root{
     --primary-clr: #000;
-    --secondary-clr: #d7d7d7;
+    --secondary-clr: #bebebe;
     --third-clr: #9c9c9c;
     --tertiary-clr: #b06a5b;
     --light-inner-border-clr: #cd745f;
@@ -38,6 +38,7 @@ body {
 
 .card-title,
 .move-name,
+.illustrator,
 .issue-number{
     text-shadow: 1px 1px 1px black;
 }
@@ -56,6 +57,23 @@ body {
     outline-offset: -5px;
 }
 
+.diagonal-line{
+    position: absolute;
+    width: 0.7px;
+    height: 6.5px;
+    background-color: black;
+    transform-origin: bottom-left;
+    transform: rotate(45deg);
+    bottom: -5.9px;
+    left: -3px;
+
+}
+
+.card-desc .diagonal-line{
+    bottom: -6px;
+    left: -2.6px;
+}
+
 .flex{
     display: flex;
 }
@@ -64,6 +82,6 @@ body {
     width: 430px;
 }
 
-.hidden{
+/* .hidden{
     display: none;
-}
+} */

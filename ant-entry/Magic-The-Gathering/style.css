@@ -8,9 +8,9 @@
     border-bottom: 2.5px solid var(--dark-outer-border-clr);
     border-left: 2.5px solid var(--dark-outer-border-clr);
     outline: 1px solid rgba(0, 0, 0, 0.5);
-    outline-offset: -3.8px;
+    outline-offset: -3px;
 
-    
+    /* Black outer border */
     &::before{
         content: "";
         position: absolute;
@@ -29,7 +29,9 @@
         justify-content: space-between;
         align-items: end;
         padding-block: 0.25rem;
+        padding-left: 0.3rem;
         
+        /* Scoria Wurm... */
         .card-title{
             line-height: 0.7;
             font-size: 1.4rem;
@@ -40,7 +42,10 @@
             gap: 2.5px;
             margin-right: -10px;
             
+            /* 4.. */
             .number{
+                display: flex;
+                justify-content: center;
                 background-color: var(--third-clr);
                 width: var(--symbol-wh);
                 height: var(--symbol-wh);
@@ -48,11 +53,9 @@
                 line-height: 1;
                 border-radius: 50%;
                 padding-left: 2px;
-                display: flex;
-                justify-content: center;
-                /* align-items: center; */
             }
             
+            /* flame symbol... */
             .symbol{
                 width: var(--symbol-wh);
                 height: var(--symbol-wh);
@@ -74,28 +77,6 @@
         background-image: url('./Images/scoria-wurm.jpg');
         background-size: cover;
         background-position: center;
-        margin: 0 auto;
-        
-        
-        /* .diagnol-line{
-            position: absolute;
-            width: 5px;
-            height: 50px;
-            background-color: black;
-            transform-origin: bottom-left;
-            transform: rotate(-45deg);
-
-            &:nth-of-type(3){
-                bottom: 0;
-                left: 0;
-            }
-
-            &:nth-of-type(2n + 1){
-                background-color: orange;
-                transform: rotate(45deg);
-            }
-
-        } */
     }
 
     /* ------------------------------------------------- */
@@ -112,22 +93,29 @@
         }
 
         .cogs{
-            width: 41px
+            width: 38px
         }
     }
 
     .card-desc{
+        position: relative;
         border-top: 5px solid var(--dark-inner-border-clr);
         border-right: 5px solid var(--dark-inner-border-clr);
         border-bottom: 5px solid var(--light-inner-border-clr);
         border-left: 5px solid var(--light-inner-border-clr);
         background-color: var(--tertiary-clr);
-        padding: 0.7rem 0.3rem;
-        font-size: 1.4rem;
-        line-height: 0.9;
-
+        padding-block: 0.7rem;
+        padding-inline: 0.3rem 0.7rem;
+        line-height: 0.95;
+        
+        /* During your upkeep, flip a coin.... */
         .action{
+            font-size: 1.4rem;
             margin-bottom: 0.8rem;
+        }
+
+        .story{
+            font-size: 1.34rem;
         }
     }
 
