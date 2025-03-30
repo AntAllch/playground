@@ -96,11 +96,9 @@ small { font-size: 12px; }
 
         }
 
-        .image {
-            img {
-                width: 100%;
-                display: block;
-            }
+        img.image {
+            width: 100%;
+            display: block;
         }
 
         .type {
