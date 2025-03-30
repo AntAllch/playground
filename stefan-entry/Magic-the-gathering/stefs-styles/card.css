@@ -1,0 +1,147 @@
+:root {
+    --size-0: 30px;
+    --size-1: 27px;
+    --size-2: 24px;
+    --size-3: 21px;
+
+    --fw-bold: 800;
+    --fw-semi-bold: 700;
+
+    --border-light: #D17063;
+    --border-dark: #573127;
+    --black: #0C0C0E;
+    --text: #0c2519;
+    --white: rgb(249, 249, 249)
+}
+
+.is-size-1 { 
+    font-size: var(--size-1);
+    line-height: 1;
+}
+
+.is-size-3 { font-size: var(--size-3); }
+.is-size-2 { font-size: var(--size-2); }
+.is-size-3 { font-size: var(--size-3); }
+small { font-size: 12px; }
+
+.has-border {
+    border: solid 5px;
+    border-left-color: var(--border-light);
+    border-bottom-color: var(--border-light);
+    border-top-color: var(--border-dark);
+    border-right-color: var(--border-dark);
+}
+
+.card-outer {
+    background: var(--black);
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.has-text-shadow {
+    text-shadow: 1.5px 1.5px 0 var(--black)
+}
+
+.mb-2 {
+    margin-bottom: 1.2rem;
+}
+
+.card {
+    .inner {
+        background: url('../stef-images/scoria-wurm-bg.jpg');
+        background-size: cover;
+        width: 470px;
+        color: var(--white);
+        padding: .1rem 1.6rem .4rem;
+        border: solid 2px;
+        border-left-color: var(--border-dark);
+        border-bottom-color: var(--border-dark);
+        border-top-color: var(--border-light);
+        border-right-color: var(--border-light);
+        position: relative;
+
+        .intro {
+            h1 {
+                letter-spacing: 1px;
+                padding-block: .25rem
+            }
+            
+            .version {
+                display: flex;
+                position: relative;
+                right: -11px;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: rgb(180, 164, 164);
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    margin-right: .25rem;
+
+                    span {
+                        font-size: 30px;
+                        color: black;
+                        line-height: 0;
+                    }
+                }
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+        }
+
+        .image {
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .type {
+            h3 {
+                font-weight: normal;
+                letter-spacing: .5px;
+                margin-top: .2rem;
+                margin-bottom: .15rem;
+            }
+
+            img {
+                width: 45px;
+                height: 26px;
+            }
+        }
+
+        .copy {
+            background: rgba(249, 231, 211, 0.3);
+            padding: .8rem 1.9rem .65rem .4rem;
+            color: var(--text);
+        }
+
+        footer {
+            text-align: center;
+            padding-top: .9rem;
+            
+            p {
+                margin-bottom: .2rem;
+                line-height: .5;
+            }
+
+            small {
+                color: var(--black);
+            }
+        }
+
+        .number {
+            position: absolute;
+            right: 18px;
+            bottom: 6px;
+            font-size: var(--size-0);
+        }
+    }
+}
