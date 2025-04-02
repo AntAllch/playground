@@ -1,0 +1,33 @@
+:root {
+    --symbal-wh: 25px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: beleren;
+    src: url("./font/MagicCardsNormal.ttf");
+}
+
+
+body{
+    height: 100vh;
+}
+
+/* utility classes */
+.flex {
+    display: flex;
+}
+
+.card-comparison{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+}

@@ -1,0 +1,105 @@
+.card{
+    background-image: url("./Images/scoria-wurm-bg.jpg");
+    border: 30px solid black;
+    border-radius: 20px;
+    width: 523px;
+    padding-inline: 1.5rem;
+    padding-block: 0.8rem 0;
+
+    .title-group {
+        /* outline: 2px solid red; */
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.3rem;
+
+        /* scordia wurm... */
+        .card-title {
+            font-family: beleren;
+            font-size: 1.8rem;
+            line-height: 0.6;
+        }
+        
+        .symbol-group {
+
+            gap: 0.2rem;
+
+            .number {
+                background-color: grey;
+                width: var(--symbal-wh);
+                height: var(--symbal-wh);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.8rem;
+                border-radius: 50%;
+            }
+
+            .flame {
+                width: var(--symbal-wh);
+                height: var(--symbal-wh);
+            }
+        }
+    }
+
+    .main-image {
+        /* outline: 2px solid red; */
+        margin-inline: auto;
+        display: block;
+        
+    }
+
+    .action-group {
+        justify-content: space-between;
+        font-size: 1.5rem;
+        margin-block: 0.4rem;
+        
+        .cogs {
+            width: 50px;
+        }
+    } 
+
+    .card-des {
+        width: 100%;
+        background-color: rgb(159, 116, 115);
+        padding: 1rem 0.4rem;
+
+        .attack {
+            font-size: 1.7rem;
+            margin-bottom: .6rem;
+        }
+
+        .story {
+            font-size: 1.5rem;
+        }
+    }
+    
+    .footer-info {
+        position: relative;
+        text-align: center;
+        margin-block: .7rem ;
+        line-height: .9;
+        
+
+        .illustrator {
+            font-size: 1.3rem;
+        }
+
+        .issue-number {
+            position: absolute;
+            right: 0;
+            bottom: 50%;
+            transform: translateY(50%);
+            font-size: 1.8rem;
+        }
+    }
+}
+
+/* ////////////////////////////////////////////////// */
+
+.card-title, 
+.move-name,
+.illustrator,
+.issue-number {
+    color: white;
+}
+
