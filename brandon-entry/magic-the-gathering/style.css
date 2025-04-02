@@ -1,5 +1,7 @@
 .card{
     background-image: url("./Images/scoria-wurm-bg.jpg");
+    background-position: center;
+    background-size: cover;
     border: 30px solid black;
     border-radius: 20px;
     width: 523px;
@@ -43,7 +45,7 @@
 
     .main-image {
         /* outline: 2px solid red; */
-        margin-inline: auto;
+        width: 100%;
         display: block;
         
     }
