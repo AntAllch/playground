@@ -1,0 +1,69 @@
+:root {
+    /* Font */
+    --font: 'Helvetica Neue';
+    
+    /* Font Sizes */
+    --size-0: 3.75rem; /* 60px */
+    --size-1: 3rem; /* 48px */
+    --size-2: 2rem; /* 32px */
+    --size-3: 1.125rem; /* 18px */
+    --size-4: 1rem; /* 16px */
+    --size-5: 0.75rem; /* 12px */
+    
+    /* Colours */
+    --creme: #FCF5EB;
+    --dark-green: #111B21;
+    --lime: #E6FFDA;
+    --green: #23D366;
+    --text: #1C1E21;
+    --white: #FFFFFF;
+
+    /* Utility */
+    --transition: .3s ease-in-out;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--creme);
+    padding: .8rem 2.5rem;
+    
+
+    nav {
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                padding-inline: 1.25rem;
+                
+                a {
+                    position: relative;
+                }
+
+                a::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -3px;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background: var(--green);
+                    border-radius: 10px;
+                    transition: width var(--transition);
+                }
+
+                a:hover::before {
+                    width: 100%;
+                }
+
+                i {
+                    font-size: var(--size-5);
+                    position: relative;
+                    top: -2px;
+                }
+            }
+        }
+    }
+}
