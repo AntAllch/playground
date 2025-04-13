@@ -28,8 +28,8 @@ header {
     align-items: center;
     background-color: var(--creme);
     padding: .8rem 2.5rem;
+    transition: all var(--transition);
     
-
     nav {
         ul {
             display: flex;
@@ -63,10 +63,35 @@ header {
                     position: relative;
                     top: -2px;
                 }
+
+                .is-dropdown {
+                    background: white;
+                    position: fixed;
+                    left: 0;
+                    width: 100%;
+                    transform: translateY(10px);
+                    opacity: 0;
+                    pointer-events: none;
+                }
+
+                /* .is-dropdown.visible header {
+                    background: var(--white)
+                } */
             }
         }
     }
 }
+
+html.dropdown-active {
+    header {
+        background-color: var(--white);
+
+        .is-dropdown {
+            opacity: 1;
+            pointer-events: unset;
+        }
+    } 
+} 
 
 .hero {
     max-height: 79vh;

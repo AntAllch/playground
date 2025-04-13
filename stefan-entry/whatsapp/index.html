@@ -16,7 +16,21 @@
 
             <nav>
                 <ul>
-                    <li><a href="#">Features</a> <i class="fa-solid fa-chevron-down"></i></li>
+                    <li>
+                        <a href="#" class="has-dropdown">Features</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                        <div class="is-dropdown">
+                            <ul>
+                                <li><a href="#">one</a></li>
+                                <li><a href="#">two</a></li>
+                                <li><a href="#">three</a></li>
+                                <li><a href="#">four</a></li>
+                                <li><a href="#">five</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
                     <li><a href="#">Privacy</a></li>
                     <li><a href="#">Help Center</a></li>
                     <li><a href="#">Blog</a></li>
@@ -42,5 +56,11 @@
         <img src="./assets/images/hero.png" alt="" />
         <small>* Data charges may apply. Contact your provider for details.</small>
     </div>
+
+    <script>
+        document.querySelector('.has-dropdown').addEventListener('click', () => {
+            document.documentElement.classList.toggle('dropdown-active')
+        })
+    </script>
 </body>
 </html>
