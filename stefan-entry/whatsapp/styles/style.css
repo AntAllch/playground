@@ -67,3 +67,31 @@ header {
         }
     }
 }
+
+.hero {
+    max-height: 79vh;
+    background-color: var(--creme);
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+        display: block;
+        width: 100%;   
+        max-height: calc(79vh - 6rem);
+        object-fit: cover;
+        object-position: top;
+        border-radius: 25px;
+    }
+
+    small {
+        margin-left: auto;
+        font-size: var(--size-5);
+        display: inline-block;
+        margin-top: 1rem;
+    }
+}

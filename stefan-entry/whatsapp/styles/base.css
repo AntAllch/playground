@@ -21,6 +21,8 @@ body {
     font-family: 'CustyFontingtons', Helvetica, Arial, sans-serif;
 }
 
+/* Utility */
+
 .container {
     max-width: 1080px;
     margin-inline: auto;
@@ -34,50 +36,59 @@ body {
     max-width: 1440px;
 }
 
+figure.image img {
+    max-width: 100%;
+}
+
 /* Buttons */
 
-.button {
-    position: relative;
-    padding: 1rem 1.75rem;
-    border: solid 1px var(--text);
-    display: inline-block;
-    border-radius: 30px;
-    background: var(--white);
-    transition: color var(--transition);
-    overflow: hidden;
-    z-index: 1;
+.buttons {
+    display: flex;
+    gap: .8rem;
 
-    i {
-        font-size: 14px;
-        margin-left: 11px;
+    .button {
+        position: relative;
+        padding: 1rem 1.75rem;
+        border: solid 1px var(--text);
+        display: inline-block;
+        border-radius: 30px;
+        background: var(--white);
+        transition: color var(--transition);
+        overflow: hidden;
+        z-index: 1;
+
+        i {
+            font-size: 14px;
+            margin-left: 11px;
+        }
     }
-}
 
-.button.download {
-    background: var(--green);
-}
+    .button.download {
+        background: var(--green);
+    }
 
-.button:hover {
-    color: var(--white)
-}
+    .button:hover {
+        color: var(--white)
+    }
 
-.button::before {
-    position: absolute;
-    content: "";
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 30px;
-    background: var(--text);
-    border-radius: 50%;
-    transition: all var(--transition);
-    scale: 1;
-    z-index: -1;
-}
+    .button::before {
+        position: absolute;
+        content: "";
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 30px;
+        background: var(--text);
+        border-radius: 50%;
+        transition: all var(--transition);
+        scale: 1;
+        z-index: -1;
+    }
 
-.button:hover::before {
-    top: -30px;
-    width: 210px;
-    height: 210px;
+    .button:hover::before {
+        top: -30px;
+        width: 210px;
+        height: 210px;
+    }
 }
