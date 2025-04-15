@@ -10,4 +10,5 @@ body{
     font-family: "Helvetica Neue";
     background-color: var(--bg-color);
     color: var(--black);
+    padding-inline: 2.5rem;
 }

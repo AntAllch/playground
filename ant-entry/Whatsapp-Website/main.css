@@ -3,5 +3,6 @@
 @import url('./styles-sheets/utility.css');
 
 /* Page Sections */
-@import url('./styles-sheets/header.css');
+@import url('./styles-sheets/sections/header.css');
+@import url('./styles-sheets/sections/hero.css');
 

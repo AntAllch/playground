@@ -1,7 +1,9 @@
 header{
-    padding: 1.9rem 3rem;
+    /* outline: 2px solid red; */
+    padding-block: 1.9rem;
     font-size: 1.25rem;
-    outline: 2px solid red;
+    max-width: 1700px;
+    margin-inline: auto;
 
     .nav-logo{
         width: 160px;
