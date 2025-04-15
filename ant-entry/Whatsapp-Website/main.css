@@ -1,6 +1,7 @@
 @import url('./styles-sheets/reset.css');
 @import url('./styles-sheets/variables.css');
 @import url('./styles-sheets/utility.css');
+@import url('./styles-sheets/font.css');
 
 /* Page Sections */
 @import url('./styles-sheets/sections/header.css');
