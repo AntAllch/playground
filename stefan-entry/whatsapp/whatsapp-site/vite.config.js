@@ -4,6 +4,6 @@ export default defineConfig({
     plugins: [],
 
     build: {
-        outDir: 'public'
+        outDir: 'dist'
     }
 })
