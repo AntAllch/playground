@@ -1,39 +1,54 @@
 .hero{
+    display: grid;
+    place-items: center;
     background-image: url('../../images/hero-img.png');
     background-size: cover;
     background-position: center;
     width: 100%;
     height: auto;
     border-radius: 2rem;
-    margin-block: 2.5rem;
+    margin-block: 1.8rem;
     padding: 1.5rem 7.75rem;
 
-    .hero-text-group{
-        width: 400px;
+    .hero-content{
+        outline: 2px solid red;
+        width: 90%;
 
-        .hero-title,
-        .hero-desc{
-            color: var(--white);
-        }
+        .hero-text-group{
+            width: 400px;
     
-        /* Message Privately */
-        .hero-title{
-            font-size: 6rem;
-            line-height: 1;
-            letter-spacing: -4px;
+            .hero-title,
+            .hero-desc{
+                color: var(--white);
+            }
+        
+            /* Message Privately */
+            .hero-title{
+                font-size: 6rem;
+                line-height: 1;
+                letter-spacing: -4px;
+            }
+        
+            /* Simple, reliable, private messaging.. */
+            .hero-desc{
+                font-size: 1.4rem;
+                line-height: 1.5;
+                margin-top: 1.5rem;
+            }
+        
+            .hero-btns{
+                gap: var(--gap);
+                font-size: 1.2rem;
+                margin-block: 7rem;
+            }
         }
-    
-        /* Simple, reliable, private messaging.. */
-        .hero-desc{
-            font-size: 1.4rem;
-            line-height: 1.5;
-            margin-top: 1.5rem;
-        }
-    
-        .hero-btns{
-            gap: var(--gap);
-            font-size: 1.2rem;
-            margin-block: 7rem;
+
+        .hero-images{
+            width: 580px;
+
+            img{
+                width: 100%;
+            }
         }
     }
 
