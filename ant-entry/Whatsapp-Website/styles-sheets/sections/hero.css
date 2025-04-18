@@ -31,6 +31,7 @@
         }
     
         .hero-btns{
+            gap: var(--gap);
             font-size: 1.2rem;
             margin-block: 7rem;
         }
